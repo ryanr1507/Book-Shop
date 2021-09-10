@@ -51,7 +51,7 @@ app.post('/charge', (req, res) => {
 
 // Use process.env.port for Heroku and it will choose the port
 // Otherwise use port 5000 locally 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 // Start the server and listen to the port
 app.listen(port, () => {
