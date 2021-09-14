@@ -1,29 +1,36 @@
-<section class="py-2">
-    <div class="row">
-        <div class="col-md-6 text-center">
-            <h1 class="display-3 mt-3 pt-5">
-                Web Development Ebook
-            </h1>
-            <p class="lead">learn web development front to back</p>
-            <form action="/charge" method="POST">
-                <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="{{stripePublishableKey}}"
-                    data-amount="2500"
-                    data-name="Web Development Ebook"
-                    data-description="Ebook written by Brad Traversy"
-                    data-image="/Images/marketplace.png"
-                    data-locale="auto">
-                </script>
-                <script>
-                    // Hide default stripe button
-                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
-                </script>
-                <button type="submit" class="btn btn-outline-dark text-white btn-lg bg-dark">Purchase For $25</button>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <img src="/Images/book (1).png" alt="" class="img-fluid">
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>The amazing one stop book shop</h1>
+                <h2>Feel like you're lacking motivation and need that extra kick? This book includes all the inspirational quotes you'll ever need in life to get you going again!</h2>
+
+                <form action="/charge" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="{{stripePublishableKey}}"
+                        data-amount="2500"
+                        data-name="Web Development Ebook"
+                        data-description="Ebook written by Brad Traversy"
+                        data-image="/Images/marketplace.png"
+                        data-locale="auto">
+                    </script>
+                    <script>
+                        // Hide default stripe button
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button type="submit" class="btn-get-started">Purchase Now!</button>
+                </form>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <section>
+                    <div class="book">
+                        <img src="/Images/Book Cover.png">
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-</section>
+  </section>
+
